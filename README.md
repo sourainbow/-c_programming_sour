@@ -1,2 +1,2 @@
-# -c_programming_sour
+# c_programming_sour
 FOR SOUR'S C PROGRAMMING CLASS
