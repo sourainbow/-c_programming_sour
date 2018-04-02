@@ -139,9 +139,9 @@ git reset --hard ea34578
 ssh -keygen -t rsa -C "sourainbow@163.com"
 ```
 然后一直回车直到命令执行结束，然后在“C:\Users\Administor\ .ssh”文件夹里你会发现id_rsa和id_rsa.pub两个文件，它们分别是你的私钥和公钥，打开id_rsa.pub，复制里面的内容，然后打开GitHub账户设置（点开头像里的Settings）里SSH and GPG Keys页面，里面已经有了我的密钥，点击New SSH key,在Key栏粘贴，在Title取一个名字，点击Add SHH key，就完成了密钥的匹配。
-![屏幕快照 2018-03-30 下午12.49.29.png](quiver-image-url/2C669EE9E3135179372FB18713BCD8D0.png =2634x1778)
+![add_new_ssh.png](https://raw.githubusercontent.com/sourainbow/c_programming_sour/master/add_new_ssh.png)
 ### 建立远程仓库
-好了，现在还需要做一步准备，就是在GitHub上建立一个仓库来接收我们的上传，点击账户主页面右上角加号图标，选择New Repository![屏幕快照 2018-03-30 下午1.01.13.png](quiver-image-url/D24CC91E64D7BE41CECB807773F75C80.png =2634x1778)
+好了，现在还需要做一步准备，就是在GitHub上建立一个仓库来接收我们的上传，点击账户主页面右上角加号图标，选择New Repository![new_github_repo.png](https://raw.githubusercontent.com/sourainbow/c_programming_sour/master/new_github_repo.png)
 在Repository name里填hellogit，其他设置不用改动，点击Creat Repository按钮，就建立成功了。接下来，就是把本地仓库的内容上传到远程仓库啦，回到本地的仓库目录，输入
 ```bash
 git remote add origin git@github.com:sourainbow/hellogit.git
