@@ -35,7 +35,7 @@ git config --global user.email "sourainbow@163.com"
 ### 建立本地仓库
 前面讲到可以在GitHub建立远程仓库，与之对应的，也可以在本地建立仓库，如果你不需要把代码传到远程，只在本地使用Git进行版本控制也是完全可以的。现在，在电脑里合适的位置新建一个文件夹作为仓库，例如在D盘新建“c_programming”文件夹“，再在里面新建“hellogit”文件夹，打开Git Bash（在这一章讲完之前，你可以一直开着它），然后输入
 ```bash
-cd D:\c_programming\hellogit
+cd D:/c_programming/hellogit
 ```
 这样就跳转到相应文件夹了，然后让我们把这个文件夹变成Git本地仓库，通过`git init`命令：
 ```bash
@@ -136,7 +136,7 @@ git reset --hard ea34578
 ### ssh密钥生成
 好了，说了这么多，终于再回到我们的GitHub，sourainbow是我们的GitHub账户，登录进去，现在有一个我上传的c_programming_sour仓库，下面我们试着把本地的hellogit仓库上传到GitHub上，首先，先要进行一下密钥验证，否则任何人都可以向我们的账户上传了。打开Git Bash，输入
 ```bash
-ssh -keygen -t rsa -C "sourainbow@163.com"
+ssh-keygen -t rsa -C "sourainbow@163.com"
 ```
 然后一直回车直到命令执行结束，然后在“C:\Users\Administor\ .ssh”文件夹里你会发现id_rsa和id_rsa.pub两个文件，它们分别是你的私钥和公钥，打开id_rsa.pub，复制里面的内容，然后打开GitHub账户设置（点开头像里的Settings）里SSH and GPG Keys页面，里面已经有了我的密钥，点击New SSH key,在Key栏粘贴，在Title取一个名字，点击Add SHH key，就完成了密钥的匹配。
 ![add_new_ssh.png](https://raw.githubusercontent.com/sourainbow/c_programming_sour/master/add_new_ssh.png)
@@ -166,7 +166,7 @@ Are you sure you want to continue connecting (yes/no)?
 ## 怎么下载远程代码
 怎么上传讲完了，接下来说下怎么下载，例如我之前在远程仓库建立的c\_programming\_sour仓库，里面有我上传的root\_finding.c文件，怎么下载到你的电脑上呢，很简单：克隆～,假如你想克隆到在D盘的c_programming文件夹里，输入
 ```bash
-cd D:\c_programming
+cd D:/c_programming
 ```
 跳转到目录下，然后输入
  ```bash 
