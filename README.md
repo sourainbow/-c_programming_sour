@@ -224,7 +224,3 @@ Fast-forward
  create mode 100644 example.txt
 ```
 然后你就发现8778.c出现在本地仓库了，so easy~之后的话我就把我修改后的传到cps仓库，便于你查看，好啦，本次更新结束。
-[1]:    https://github.com/sourainbow
-[2]:    https://pan.baidu.com/s/1kU5OCOB?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=#list/path=%2Fpub%2Fgit
-[3]:    mailto:sourainbow@163.com
-[4]:    mailto:sourainbow@163.com
