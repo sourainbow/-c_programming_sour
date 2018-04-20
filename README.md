@@ -194,7 +194,7 @@ git pull origin master
 先查看你的本地仓库连接的是哪个仓库，输入
 ```bash
 git remote -v
-```bash
+```
 输出类似于
 ```bash
 origin  git@github.com:sourainbow/c_programming_sour.git (fetch)
@@ -202,7 +202,7 @@ origin  git@github.com:sourainbow/c_programming_sour.git (push)
 ```
 说明连接到远程c_progamming_sour仓库了，可以下一步了，如果不是你的目标仓库，先远程连接仓库
 ```bash
-git remote add origin git@github.com:sourainbow/c\_programming\_sour.git
+git remote add origin git@github.com:sourainbow/c_programming_sour.git
 ```
 然后输入
 ```bash
